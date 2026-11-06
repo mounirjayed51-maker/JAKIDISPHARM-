@@ -279,12 +279,11 @@
                 id: 3,
                 name: "APPÉRAX",
                 subtitle: "Solution buvable - Goût Orange",
-                description: "Complément alimentaire à base d'extraits de Fenugrec  + Fenouil + Vitamines B6, B9, B12. 
-                Stimulation naturelle de l'appétit.",
+                description: "Complément alimentaire à base d'extraits de Fenugrec + Fenouil + Vitamines B6, B9, B12. Stimulation naturelle de l'appétit.",
                 contenance: "Flacon 200ml (Sirop 125ml)",
                 ppc: 79.00,
                 image: "3.jpg",
-                printName: "APPÉRAX Sirop 125ml"
+                printName: "APPÉRAX Sirop 125ml",
                 hasAttachment: true,
                 attachmentImage: "Apperax.jpg"
             },
@@ -292,10 +291,7 @@
                 id: 4,
                 name: "PLUXITAMINE",
                 subtitle: "MULTI-VITAMINES ET MINÉRAUX 30 GÉLULES",
-                description: "Pluxitamine est un multivitamine qui favorise 
-               une bonne santé en administrant à l'organisme
-               les micronutriments nécessaires qui améliorent 
-               les niveaux d'énergie et le sentiment de bien-être et réduisent la fatigue.",
+                description: "Pluxitamine est un multivitamine qui favorise une bonne santé en administrant à l'organisme les micronutriments nécessaires qui améliorent les niveaux d'énergie et le sentiment de bien-être et réduisent la fatigue.",
                 contenance: "30 gélules (Voie orale) | Poids: 12.36g",
                 ppc: 87.00,
                 image: "4.jpg",
@@ -307,9 +303,7 @@
                 id: 5,
                 name: "VOXITOSSE",
                 subtitle: "Solution buvable 200ml",
-                description: "À BASE DE PROPOLIS + VITAMINE C + EXTRAITS DE PLANTES. 
-               Réduit la toux, Libère les voies respiratoires, 
-               Adoucit la gorge, Renforce la défense naturelle.",
+                description: "À BASE DE PROPOLIS + VITAMINE C + EXTRAITS DE PLANTES. Réduit la toux, Libère les voies respiratoires, Adoucit la gorge, Renforce la défense naturelle.",
                 contenance: "200ml solution buvable",
                 ppc: 79.90,
                 image: "2.jpg",
@@ -492,7 +486,7 @@
             const paiement = document.getElementById('input-paiement').value;
             document.getElementById('chk-espece').checked = (paiement === 'En espèce');
             document.getElementById('chk-cheque').checked = (paiement === 'Chèque');
-            document.getElementById('chk-virement').checked -> (paiement === 'Virement');
+            document.getElementById('chk-virement').checked = (paiement === 'Virement');
 
             window.print();
         }
