@@ -109,7 +109,7 @@
 
     <!-- Product Details Modal -->
     <div id="details-modal" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4 no-print">
-        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 relative shadow-2xl">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto p-6 relative shadow-2xl">
             <button onclick="closeDetailsModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-xl font-bold">&times;</button>
             <div id="modal-content"></div>
         </div>
@@ -279,71 +279,43 @@
                 id: 3,
                 name: "APPÉRAX",
                 subtitle: "Solution buvable - Goût Orange",
-                description: "Complément alimentaire à base d'extraits de Fenugrec  + Fenouil + Vitamines B6, B9, B12. Stimulation naturelle de l'appétit.",
+                description: "Complément alimentaire à base d'extraits de Fenugrec  + Fenouil + Vitamines B6, B9, B12. 
+                Stimulation naturelle de l'appétit.",
                 contenance: "Flacon 200ml (Sirop 125ml)",
                 ppc: 79.00,
                 image: "3.jpg",
                 printName: "APPÉRAX Sirop 125ml"
+                hasAttachment: true,
+                attachmentImage: "Apperax.jpg"
             },
             {
                 id: 4,
                 name: "PLUXITAMINE",
                 subtitle: "MULTI-VITAMINES ET MINÉRAUX 30 GÉLULES",
-                description: "Pluxitamine est un multivitamine qui favorise une bonne santé en administrant à l'organisme les micronutriments nécessaires qui améliorent les niveaux d'énergie et le sentiment de bien-être et réduisent la fatigue[span_0](start_span)[span_0](end_span).",
+                description: "Pluxitamine est un multivitamine qui favorise 
+               une bonne santé en administrant à l'organisme
+               les micronutriments nécessaires qui améliorent 
+               les niveaux d'énergie et le sentiment de bien-être et réduisent la fatigue.",
                 contenance: "30 gélules (Voie orale) | Poids: 12.36g",
                 ppc: 87.00,
                 image: "4.jpg",
                 printName: "PLUXITAMINE 30 gélules",
-                technicalInfoImage: "Pluxitamine.jpg",
-                technicalInfo: {
-                    compositionTitle: "COMPOSITION",
-                    tableHeaders: ["Ingrédients", "AJR/1gélule", "% AQ"],
-                    table: [
-                        { item: "Vitamine C", val: "180 mg", aq: "100 %" },
-                        { item: "Vitamine E", val: "12 mg", aq: "100 %" },
-                        { item: "Vitamine B3", val: "11 mg", aq: "68,75 %" },
-                        { item: "Zinc", val: "10 mg", aq: "66,67 %" },
-                        { item: "Sulfate de magnésium", val: "10 mg", aq: "2,66 %" },
-                        { item: "Cuivre", val: "2 mg", aq: "100 %" },
-                        { item: "Vitamine B2", val: "1,5 mg", aq: "107,14 %" },
-                        { item: "Vitamine B6", val: "1,5 mg", aq: "107,14 %" },
-                        { item: "Vitamine B1", val: "1,1 mg", aq: "100 %" },
-                        { item: "Vitamine A", val: "800 µg", aq: "100 %" },
-                        { item: "Vitamine B9", val: "200 µg", aq: "100 %" },
-                        { item: "Sélénium", val: "55 µg", aq: "100 %" },
-                        { item: "Vitamine B8", val: "45 µg", aq: "90 %" },
-                        { item: "Vitamine D3 (cholécalciférol)", val: "15 µg dont 6,97 de la vitamine D (Calciférol)", aq: "139,4 %" },
-                        { item: "Vitamine B12", val: "2 µg", aq: "100 %" }
-                    ],
-                    presentation: "Pluxitamine est un multivitamine qui favorise une bonne santé en administrant à l'organisme les micronutriments nécessaires qui améliorent les niveaux d'énergie et le sentiment de bien-être et réduisent la fatigue[span_1](start_span)[span_1](end_span).",
-                    conseils: "1 à 2 gélules par jour, de préférence le matin, avec un grand verre d'eau. à consommer dans le cadre d'une alimentation équilibrée. Ne pas dépasser la dose journalière recommandée. Nous recommandons aux femmes enceintes et allaitantes de consulter un professionnel de santé avant toute utilisation. Conserver dans un endroit frais et sec[span_2](start_span)[span_2](end_span).",
-                    precautions: "À utiliser en complément d'une alimentation variée. Tenir hors de portée des enfants. Conserver à l'abri de l'humidité et de la chaleur[span_3](start_span)[span_3](end_span)."
-                }
+                hasAttachment: true,
+                attachmentImage: "Pluxitamine.jpg"
             },
             {
                 id: 5,
                 name: "VOXITOSSE",
                 subtitle: "Solution buvable 200ml",
-                description: "À BASE DE PROPOLIS + VITAMINE C + EXTRAITS DE PLANTES. Réduit la toux, Libère les voies respiratoires, Adoucit la gorge, Renforce la défense naturelle[span_4](start_span)[span_4](end_span).",
+                description: "À BASE DE PROPOLIS + VITAMINE C + EXTRAITS DE PLANTES. 
+               Réduit la toux, Libère les voies respiratoires, 
+               Adoucit la gorge, Renforce la défense naturelle.",
                 contenance: "200ml solution buvable",
                 ppc: 79.90,
                 image: "2.jpg",
                 printName: "VOXITOSSE 200ml",
-                technicalInfoImage: "7.jpg",
-                technicalInfo: {
-                    compositionTitle: "COMPOSITION",
-                    tableHeaders: ["Ingrédients", "AJR par 10 ml", "Quantité pour 100 ml", "VRN par 10 ml"],
-                    table: [
-                        { item: "Extraits de mauve", val: "100 mg", aq: "1 g", extra: "-" },
-                        { item: "Vitamine C", val: "80 mg", aq: "0,8 g", extra: "100%" },
-                        { item: "Extrait d'échinacée", val: "50 mg", aq: "0,5 g", extra: "-" },
-                        { item: "Extrait d'eucalyptus", val: "50 mg", aq: "0,5 g", extra: "-" },
-                        { item: "Extraits secs de propolis", val: "50 mg", aq: "0,5 g", extra: "-" },
-                        { item: "Extraits fluides de thym", val: "25 mg", aq: "0,25 g", extra: "-" }
-                    ],
-                    modeUtilisation: "adulte : prendre une cuillère à soupe trois à quatre fois par jour.<br>enfant : prendre une cuillère à café trois à quatre fois par jour.<br>dans tous les cas suivre prescription de médecin ou pharmacien[span_5](start_span)[span_5](end_span).",
-                    conseils: "• ne pas utiliser si allergique à la propolis<br>• ne pas utiliser chez la femme enceinte, allaitante et nourrisson<br>• garder hors de portée des enfants<br>• après ouverture, conserver au frais et consommer dans un délai de 4 semaines[span_6](start_span)[span_6](end_span)."
-                }
+                hasAttachment: true,
+                attachmentImage: "7.jpg"
             }
         ];
 
@@ -369,9 +341,9 @@
                             </span>
                         </div>
                         <div class="space-y-2 pt-2 border-t">
-                            ${p.technicalInfo ? `
-                                <button onclick="showDetails(${p.id})" class="w-full text-xs font-semibold text-brandBlue hover:text-sky-700 py-1.5 flex items-center justify-center">
-                                    <i class="fa-solid fa-circle-info mr-1.5"></i> Fiche Technique ${p.name}
+                            ${p.hasAttachment ? `
+                                <button onclick="showDetails(${p.id})" class="w-full text-xs font-semibold text-brandBlue hover:text-sky-700 py-1.5 flex items-center justify-center bg-sky-50 border border-sky-200 rounded-lg">
+                                    <i class="fa-solid fa-paperclip mr-1.5"></i> Fiche Technique (Pièce jointe)
                                 </button>
                             ` : ''}
                             <div class="flex items-center gap-2">
@@ -453,88 +425,23 @@
 
         function showDetails(id) {
             const p = products.find(item => item.id === id);
-            if (!p || !p.technicalInfo) return;
+            if (!p || !p.hasAttachment) return;
 
             const content = document.getElementById('modal-content');
-            const info = p.technicalInfo;
             
-            let tableHeadersHtml = info.tableHeaders.map(th => `<th class="p-2">${th}</th>`).join('');
-            
-            let tableRowsHtml = info.table.map(row => {
-                if (p.id === 5) {
-                    return `
-                        <tr class="hover:bg-slate-50">
-                            <td class="p-2 font-medium">${row.item}</td>
-                            <td class="p-2 text-slate-600">${row.val}</td>
-                            <td class="p-2 text-slate-600">${row.aq}</td>
-                            <td class="p-2 text-brandGreen font-semibold">${row.extra}</td>
-                        </tr>
-                    `;
-                } else {
-                    return `
-                        <tr class="hover:bg-slate-50">
-                            <td class="p-2 font-medium">${row.item}</td>
-                            <td class="p-2 text-slate-600">${row.val}</td>
-                            <td class="p-2 text-brandGreen font-semibold">${row.aq}</td>
-                        </tr>
-                    `;
-                }
-            }).join('');
-
             content.innerHTML = `
-                <div class="flex items-start gap-4 mb-4">
-                    <img src="${p.technicalInfoImage || p.image}" class="h-24 w-24 object-contain rounded-xl border p-2 bg-slate-50" onerror="this.src='${p.image}'">
+                <div class="flex items-center justify-between mb-4 pb-2 border-b">
                     <div>
-                        <h3 class="text-2xl font-bold text-slate-900">${p.name}</h3>
-                        <p class="text-xs font-semibold text-brandGreen">${p.subtitle}</p>
-                        <p class="text-xs text-slate-500 mt-1">${p.contenance}</p>
+                        <h3 class="text-xl font-bold text-slate-900">Fiche Technique - ${p.name}</h3>
+                        <span class="text-xs text-slate-500">Document officiel joint (Pièce jointe d'origine)</span>
                     </div>
+                    <a href="${p.attachmentImage}" target="_blank" class="bg-brandBlue text-white text-xs font-semibold px-3 py-1.5 rounded-lg hover:bg-sky-600 transition flex items-center">
+                        <i class="fa-solid fa-expand mr-1.5"></i> Afficher en grand
+                    </a>
                 </div>
-
-                <div class="space-y-4 text-xs">
-                    <div>
-                        <h4 class="font-bold text-slate-800 uppercase border-b pb-1 mb-2 text-brandBlue">${info.compositionTitle}</h4>
-                        <div class="overflow-x-auto border rounded-xl">
-                            <table class="w-full text-left">
-                                <thead class="bg-slate-100 text-slate-700 font-bold border-b">
-                                    <tr>${tableHeadersHtml}</tr>
-                                </thead>
-                                <tbody class="divide-y">
-                                    ${tableRowsHtml}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    ${info.presentation ? `
-                        <div>
-                            <h4 class="font-bold text-slate-800 uppercase border-b pb-1 mb-1 text-brandBlue">PRÉSENTATION</h4>
-                            <p class="text-slate-600 leading-relaxed">${info.presentation}</p>
-                        </div>
-                    ` : ''}
-
-                    ${info.modeUtilisation ? `
-                        <div>
-                            <h4 class="font-bold text-slate-800 uppercase border-b pb-1 mb-1 text-brandBlue">Mode d'utilisation</h4>
-                            <p class="text-slate-600 leading-relaxed">${info.modeUtilisation}</p>
-                        </div>
-                    ` : ''}
-
-                    ${info.conseils ? `
-                        <div>
-                            <h4 class="font-bold text-slate-800 uppercase border-b pb-1 mb-1 text-brandBlue">CONSEILS D'UTILISATION</h4>
-                            <p class="text-slate-600 leading-relaxed">${info.conseils}</p>
-                        </div>
-                    ` : ''}
-
-                    ${info.precautions ? `
-                        <div>
-                            <h4 class="font-bold text-slate-800 uppercase border-b pb-1 mb-1 text-brandBlue">PRÉCAUTIONS D'UTILISATION</h4>
-                            <p class="text-slate-600 leading-relaxed">${info.precautions}</p>
-                        </div>
-                    ` : ''}
+                <div class="flex justify-center bg-slate-100 p-2 rounded-xl border">
+                    <img src="${p.attachmentImage}" alt="Fiche Technique ${p.name}" class="max-h-[75vh] w-auto object-contain rounded-lg shadow" onerror="this.src='https://placehold.co/600x800/e2e8f0/1e293b?text=Fiche+Technique+${p.name}'">
                 </div>
-
                 <div class="mt-6 flex justify-end">
                     <button onclick="closeDetailsModal()" class="bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-semibold px-4 py-2 rounded-xl">Fermer</button>
                 </div>
@@ -585,7 +492,7 @@
             const paiement = document.getElementById('input-paiement').value;
             document.getElementById('chk-espece').checked = (paiement === 'En espèce');
             document.getElementById('chk-cheque').checked = (paiement === 'Chèque');
-            document.getElementById('chk-virement').checked = (paiement === 'Virement');
+            document.getElementById('chk-virement').checked -> (paiement === 'Virement');
 
             window.print();
         }
